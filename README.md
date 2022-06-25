@@ -12,6 +12,7 @@
     $MYSQL_USER = 'root';
 		
     $MYSQL_PASS = '';
+    
     $MYSQL_DB = 'ccs'; 
 		
     MySQL ayarları bu şekildedir değiştirmek isterseniz. classes/db/database.class.php dosyasındaki değerleri değiştirebilirsiniz.
