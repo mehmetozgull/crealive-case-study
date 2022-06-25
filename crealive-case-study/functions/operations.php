@@ -14,7 +14,7 @@ if(isset($_GET["operation"])){
             case 'admin-login':
                 if($security::control("POST")) {
                     $email = $security::security("e-mail");
-                    $pass = $security::security("password");
+                    $pass = securityPass($_POST["password"]);
                     $ccsToken = $security::security("ccs-token");
                     if(($email != "") && ($pass != "")){
                         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
