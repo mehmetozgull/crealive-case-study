@@ -19,6 +19,12 @@ function security($text){
     return $result;
 }
 
+function securityPass($text){
+    $deleteSpace 	=	trim($text);
+    $result         =	strip_tags($deleteSpace);
+    return $result;
+}
+
 function imgExtensionControl($imgType) {
     $expImageType = explode("/", $imgType);
     $type = end($expImageType);
